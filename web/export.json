@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "assets": {
+    "favicon.png": "assets/share/favicon.png",
+    "loading-cover.png": "assets/share/og.png"
+  },
+  "shell": {
+    "builder": "web/build-shell.mjs",
+    "output": "web/loading.html"
+  }
+}

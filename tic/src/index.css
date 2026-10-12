@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Fredoka', 'Outfit', sans-serif;
+}
+
+/* Neon glow utility classes */
+.neon-glow-pink {
+  box-shadow: 0 0 15px rgba(255, 42, 133, 0.45), inset 0 0 10px rgba(255, 42, 133, 0.2);
+}
+
+.neon-glow-pink-lg {
+  box-shadow: 0 0 25px rgba(255, 42, 133, 0.6), 0 0 50px rgba(255, 42, 133, 0.25), inset 0 0 15px rgba(255, 42, 133, 0.3);
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 15px rgba(26, 209, 215, 0.5), inset 0 0 8px rgba(26, 209, 215, 0.25);
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 18px rgba(181, 55, 242, 0.5), inset 0 0 10px rgba(181, 55, 242, 0.2);
+}
+
+.neon-glow-yellow {
+  filter: drop-shadow(0 0 10px rgba(255, 235, 59, 0.85));
+}
+
+/* Synthwave perspective grid */
+.synthwave-grid {
+  background-image: 
+    linear-gradient(to right, rgba(168, 85, 247, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.35) 1px, transparent 1px);
+  background-size: 36px 36px;
+  transform: perspective(300px) rotateX(60deg);
+  transform-origin: center bottom;
+}

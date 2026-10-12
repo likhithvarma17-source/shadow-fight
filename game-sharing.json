@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "title": "Shadow",
+  "description": "A rain-soaked cyber-noir action game. Slash, parry and rewind through a multi-stage mission.",
+  "defaultCaptions": {},
+  "assets": {
+    "og": "assets/share/og.png",
+    "favicon": "assets/share/favicon.png"
+  }
+}

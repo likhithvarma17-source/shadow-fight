@@ -1,0 +1,28 @@
+{
+  "tool": "image_gen.imagegen",
+  "model": null,
+  "prompt": "Use case: stylized-concept. Asset type: opaque game loading-screen background for an existing 2D side-scrolling giant-robot destruction game. Create a polished widescreen 1536x1024 sci-fi illustration: a bulky teal-gray industrial battle robot with orange-lit reactor and massive fists looms in a rain-soaked corporate business district; damaged glass office towers and small distant military drones hint at the destruction gameplay. Restrained steel-blue, cyan and amber palette, atmospheric cinematic side-on framing, crisp painterly game art, convincing giant scale. Keep the robot mostly in the upper-right third, architecture left; lower central third calm dark atmospheric space for separately rendered live loading UI. Opaque full-bleed background. No words, typography, logos, watermarks, HUD, progress bars, UI frames, or Godot marks. This preserves the existing template's robot/corporate-district identity, not a new game theme.",
+  "generatedMasterSha256": "1633cba4fe4ea28e76c5e4536a13cfa8996ca846039017c778f42b9acd275245",
+  "asset": "assets/template/ui/loading-background.png",
+  "assetSha256": "2107180495668d1a4101cbadad8451af15351b92fbac2c90d24248ce9f0b0657",
+  "embeddedWebpSha256": "30a60d9b7e8b94ded0caf8ebe3349886c4d3aff67d6d637e60101f9dbb4b3186",
+  "processing": "Aspect-preserving downscale to 1280px width; 256-color PNG boot image and quality-82 WebP embedded before PCK; no text baked into either image.",
+  "bytes": {
+    "png": 679657,
+    "webp": 161168
+  },
+  "webAsset": "assets/template/ui/loading-background.webp",
+  "delivery": "PNG restored through assets.lock.json for native boot; existing WebP restored once and staged beside exported HTML. No artwork re-encoding.",
+  "restoredAssets": {
+    "assets/template/ui/loading-background.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/24/2107180495668d1a4101cbadad8451af15351b92fbac2c90d24248ce9f0b0657.bin",
+      "sha256": "2107180495668d1a4101cbadad8451af15351b92fbac2c90d24248ce9f0b0657",
+      "size": 679657
+    },
+    "assets/template/ui/loading-background.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/24/30a60d9b7e8b94ded0caf8ebe3349886c4d3aff67d6d637e60101f9dbb4b3186.webp",
+      "sha256": "30a60d9b7e8b94ded0caf8ebe3349886c4d3aff67d6d637e60101f9dbb4b3186",
+      "size": 161168
+    }
+  }
+}

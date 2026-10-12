@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "type": "frame-animation",
+  "managed": true,
+  "name": "Shoot",
+  "fps": 12,
+  "loop": true,
+  "coverFrame": "assets/characters/gunner/shoot/shoot_00.webp",
+  "frames": [
+    "assets/characters/gunner/shoot/shoot_00.webp",
+    "assets/characters/gunner/shoot/shoot_01.webp",
+    "assets/characters/gunner/shoot/shoot_02.webp",
+    "assets/characters/gunner/shoot/shoot_03.webp",
+    "assets/characters/gunner/shoot/shoot_04.webp",
+    "assets/characters/gunner/shoot/shoot_05.webp",
+    "assets/characters/gunner/shoot/shoot_06.webp",
+    "assets/characters/gunner/shoot/shoot_07.webp",
+    "assets/characters/gunner/shoot/shoot_08.webp",
+    "assets/characters/gunner/shoot/shoot_09.webp",
+    "assets/characters/gunner/shoot/shoot_10.webp",
+    "assets/characters/gunner/shoot/shoot_11.webp"
+  ]
+}

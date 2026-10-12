@@ -1,0 +1,6 @@
+{
+  "name": "Neon 2D Tic Tac Toe",
+  "description": "Polished, modern 2D Tic Tac Toe game with synthwave neon aesthetic, 3x3, 6x6, 9x9, and 11x11 grid modes, smart AI, and smooth animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "type": "frame-animation",
+  "managed": true,
+  "name": "Run",
+  "fps": 12,
+  "loop": true,
+  "coverFrame": "assets/characters/blade_guard/run/run_00.webp",
+  "frames": [
+    "assets/characters/blade_guard/run/run_00.webp",
+    "assets/characters/blade_guard/run/run_01.webp",
+    "assets/characters/blade_guard/run/run_02.webp",
+    "assets/characters/blade_guard/run/run_03.webp",
+    "assets/characters/blade_guard/run/run_04.webp",
+    "assets/characters/blade_guard/run/run_05.webp",
+    "assets/characters/blade_guard/run/run_06.webp",
+    "assets/characters/blade_guard/run/run_07.webp",
+    "assets/characters/blade_guard/run/run_08.webp",
+    "assets/characters/blade_guard/run/run_09.webp",
+    "assets/characters/blade_guard/run/run_10.webp",
+    "assets/characters/blade_guard/run/run_11.webp",
+    "assets/characters/blade_guard/run/run_12.webp"
+  ]
+}

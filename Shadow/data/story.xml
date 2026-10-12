@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  《影》剧情配置
+
+  最常用的改法：
+  1. 直接修改 <line>文字</line> 中间的内容。
+  2. 复制、删除或上下移动整行 <line> 来增删、排序对白。
+	  3. speaker 是说话人标签；target 决定气泡跟随谁；正式剧情对白逐字显示并等待 J。
+	  4. world 对白可用 target：blade、player、gunner、reinforcement_lead、boss；室内关卡使用 member_0、member_1、member_2。室内第二至五层在 NPC 进入画面时出现且不暂停战斗。
+  5. <barks role="..."> 中的台词会按顺序分给第一关对应类型的敌人，出现 3 秒或随敌人死亡消失。
+  6. 文字中如果需要直接写 & 符号，请写成 &amp;。其他中文标点和引号可正常输入。
+-->
+<story version="1">
+  <scene id="opening_briefing" mode="phone">
+	<line speaker="加密委托" duration="1.25">委托编号：影-041</line>
+	<line speaker="任务目标" duration="1.70">摧毁一件被标记为“货物”的目标。</line>
+	<line speaker="任务地点" duration="1.70">东区旧电站 // 赤井帮据点</line>
+	<line speaker="情报摘要" duration="2.10">目标由犯罪组织“赤井帮”严密控制。
+先想办法突破他们的外围据点。</line>
+	<line speaker="报酬" duration="1.45">确认销毁后结算。</line>
+		<line speaker="注意事项" duration="1.65">别问货物是什么。别留下目击者。</line>
+	  </scene>
+
+	  <!-- 闪电落下、影现身后，打手先说这一句，再进入正式质问。 -->
+	  <scene id="tutorial_materialize" mode="world">
+	    <line target="blade" speaker="赤井帮打手" duration="1.65">什么鬼？！你是从雷里冒出来的？！</line>
+	  </scene>
+
+	  <scene id="tutorial_arrival" mode="world">
+    <line target="blade" speaker="赤井帮打手" duration="2.80">你他妈谁啊？这是你来的地儿吗？
+趁我没生气，赶紧滚。</line>
+	<line target="player" speaker="影" duration="1.40">……</line>
+    <line target="blade" speaker="赤井帮打手" duration="2.10">妈的，故意找茬是吧。</line>
+  </scene>
+
+  <scene id="tutorial_gunner_alarm" mode="world">
+    <line target="gunner" speaker="赤井帮枪手" duration="2.00">草！！来人啊！！有人打上门了！</line>
+  </scene>
+
+	  <scene id="tutorial_reinforcements" mode="world">
+	    <line target="reinforcement_lead" speaker="赤井帮增援" duration="1.70">弄死他！！</line>
+	  </scene>
+
+		  <!-- 第二关室内据点：第一层为 J 键推进的剧情对白；第二至五层在 NPC 进入画面时提前显示普通对话，不暂停战斗，duration 控制停留秒数。 -->
+	  <scene id="interior_floor_1" mode="world">
+	    <line target="member_0" speaker="赤井帮打手" duration="2.20">这破雨什么时候停？老子的靴子都泡透了。</line>
+	    <line target="member_1" speaker="赤井帮枪手" duration="2.20">少抱怨。守完这班就去楼上喝一杯。</line>
+	    <line target="member_0" speaker="赤井帮打手" duration="1.70">等等……那边有人。</line>
+	  </scene>
+
+	  <scene id="interior_floor_2" mode="world">
+	    <line target="member_1" speaker="赤井帮打手" duration="2.20">仓库那只东西又在抓箱子了。</line>
+	    <line target="member_2" speaker="赤井帮枪手" duration="2.10">闭嘴。当没听见。</line>
+	    <line target="member_0" speaker="赤井帮打手" duration="1.70">下面没声了……入侵者！</line>
+	  </scene>
+
+		  <scene id="interior_floor_3" mode="world">
+		    <line target="member_0" speaker="赤井帮枪手" duration="2.10">守门人还在上面？</line>
+		    <line target="member_1" speaker="赤井帮打手" duration="2.10">在。没人过得了他。</line>
+		    <line target="member_2" speaker="赤井帮枪手" duration="1.70">他上来了——开火！</line>
+		  </scene>
+
+		  <scene id="interior_floor_4" mode="world">
+		    <line target="member_0" speaker="赤井帮枪手" duration="2.10">下面的警报怎么全亮了？</line>
+		    <line target="member_1" speaker="赤井帮打手" duration="2.10">守住楼梯，别让他摸到顶层。</line>
+		    <line target="member_2" speaker="赤井帮枪手" duration="1.70">看见了，在平台下面！</line>
+		  </scene>
+
+		  <scene id="interior_floor_5" mode="world">
+		    <line target="member_0" speaker="赤井帮打手" duration="2.10">守门人不下来帮忙吗？</line>
+		    <line target="member_1" speaker="赤井帮枪手" duration="2.10">他的命令是守住货物。</line>
+		    <line target="member_2" speaker="赤井帮枪手" duration="1.70">目标进入顶层，交叉射击！</line>
+		  </scene>
+
+	  <!-- 首领战开场：直接修改下面几句即可，不需要改 GDScript。 -->
+	  <scene id="boss_arrival" mode="world">
+	    <line target="boss" speaker="守门人" duration="3.40">站住。你闯进别人家里大开杀戒，不觉得很没有礼貌吗？</line>
+	    <line target="player" speaker="影" duration="1.30">……</line>
+	    <line target="boss" speaker="守门人" duration="1.80">哦，不爱说话？</line>
+	    <line target="player" speaker="影" duration="1.20">……</line>
+	    <line target="boss" speaker="守门人" duration="3.20">很好，等我卸掉你的两条腿看你还能不能继续保持沉默。</line>
+	  </scene>
+
+    <!-- 首领战结束，首领倒在地上，念出最后的话，随后死亡。 -->
+	  <scene id="boss_passed" mode="world">
+	    <line target="boss" speaker="守门人" duration="3.40">你...你似乎能预判...我的动作</line>
+	    <line target="player" speaker="影" duration="1.30">……</line>
+	    <line target="boss" speaker="守门人" duration="1.80">你难道是...我知道了，你是来...</line>
+	  </scene>
+
+	  <!-- 首领战后漫画：speaker 是幕标题，target 选择画面，duration 控制停留时间。 -->
+	  <scene id="post_boss_epilogue" mode="comic">
+	    <line target="warehouse" speaker="第二幕  //  货物" duration="3.10">旧电站地下仓库。
+委托目标就在那盏灯下。</line>
+	    <line target="crate" speaker="目标确认" duration="2.80">没有编号，没有警告。
+只有一只潮湿的木箱。</line>
+	    <line target="blade" speaker="执行委托" duration="2.70">影拔出刀。
+任务只剩最后一下。</line>
+	    <line target="blade_hold" speaker="……" duration="1.55">——喵。</line>
+	    <line target="cat" speaker="货物" duration="3.60">箱盖缓缓弹开。
+里面的东西正在发抖。</line>
+	  </scene>
+
+	  <barks role="blade">
+    <line duration="3.0">现在跪下，还能留个全尸。</line>
+    <line duration="3.0">赤井帮的门，也是你能闯的？</line>
+    <line duration="3.0">再往前一步，我把你剁碎。</line>
+    <line duration="3.0">赏金猎人？看起来更像条丧家犬。</line>
+    <line duration="3.0">老子正愁今晚没乐子。</line>
+    <line duration="3.0">你走错屋顶了，杂种。</line>
+  </barks>
+
+  <barks role="gunner">
+    <line duration="3.0">别动！再动我就开枪！</line>
+    <line duration="3.0">目标出现，直接击毙！</line>
+    <line duration="3.0">你躲得过第一枪吗？</line>
+    <line duration="3.0">赤井帮的货，你也敢碰？</line>
+    <line duration="3.0">给我站在灯下，混蛋！</line>
+    <line duration="3.0">这条路到头了。</line>
+  </barks>
+</story>

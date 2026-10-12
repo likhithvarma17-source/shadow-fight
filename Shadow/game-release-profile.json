@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "exclude": [
+    "scripts/tuning_panel.gd",
+    "scripts/hitbox_debug_overlay.gd"
+  ],
+  "changes": {
+    "scripts/game.gd": [
+      {
+        "before": "const TuningPanel = preload(\"res://scripts/tuning_panel.gd\")\n",
+        "after": ""
+      },
+      {
+        "before": "const HitboxDebugOverlay = preload(\"res://scripts/hitbox_debug_overlay.gd\")\n",
+        "after": ""
+      },
+      {
+        "before": "\ttuning_panel = TuningPanel.new()\n\tadd_child(tuning_panel)\n\thitbox_debug_overlay = HitboxDebugOverlay.new()\n\thitbox_debug_overlay.setup(self)\n\tadd_child(hitbox_debug_overlay)\n",
+        "after": ""
+      },
+      {
+        "before": "\"操作\\n移动  A/D 或方向键   •   跳跃  K\\n下穿平台  S/↓ + K   •   方向 + 斩击  J/X\\n专注  L/Shift   •   重演  R   •   暂停  ESC   •   调参  F1/P\"",
+        "after": "\"操作\\n移动  A/D 或方向键   •   跳跃  K\\n下穿平台  S/↓ + K   •   方向 + 斩击  J/X\\n专注  L/Shift   •   重演  R   •   暂停  ESC\""
+      }
+    ],
+    "scripts/boss_battle.gd": [
+      {
+        "before": "const TuningPanel = preload(\"res://scripts/tuning_panel.gd\")\n",
+        "after": ""
+      },
+      {
+        "before": "const HitboxDebugOverlay = preload(\"res://scripts/hitbox_debug_overlay.gd\")\n",
+        "after": ""
+      },
+      {
+        "before": "\ttuning_panel = TuningPanel.new()\n\tadd_child(tuning_panel)\n\thitbox_debug_overlay = HitboxDebugOverlay.new()\n\thitbox_debug_overlay.setup(self)\n\tadd_child(hitbox_debug_overlay)\n",
+        "after": ""
+      }
+    ],
+    "scripts/tuning_store.gd": [
+      {
+        "before": "\tvar config := ConfigFile.new()\n\tif config.load(CONFIG_PATH) == OK:\n\t\tvar stored_version := int(config.get_value(\"meta\", \"version\", 0))\n\t\tif stored_version >= 4 and stored_version <= CONFIG_VERSION:\n\t\t\tfor key in DEFAULTS.keys():\n\t\t\t\t_values[key] = float(config.get_value(\"tuning\", key, DEFAULTS[key]))\n",
+        "after": ""
+      }
+    ],
+    "scripts/title_screen.gd": [
+      {
+        "before": "\"移动  A D / 方向键     跳跃  K     下穿平台  S / ↓ + K\\n方向 + 斩击  J / X / 点击     专注  L / Shift\\n重演  R     暂停  ESC     实时调参  F1 / P\"",
+        "after": "\"移动  A D / 方向键     跳跃  K     下穿平台  S / ↓ + K\\n方向 + 斩击  J / X / 点击     专注  L / Shift\\n重演  R     暂停  ESC\""
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "checks": [
+    {"kind": "script", "path": "res://test/story_smoke.gd", "expect": "[STORY_SMOKE_PASS]"},
+    {"kind": "script", "path": "res://test/exported_pack_boot.gd", "expect": "[PCK_BOOT_PASS]", "profile": "pack"}
+  ]
+}

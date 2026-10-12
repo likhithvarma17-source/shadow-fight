@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "type": "frame-animation",
+  "managed": true,
+  "name": "Death",
+  "fps": 12,
+  "loop": true,
+  "coverFrame": "assets/characters/hero/death/death_00.webp",
+  "frames": [
+    "assets/characters/hero/death/death_00.webp",
+    "assets/characters/hero/death/death_01.webp",
+    "assets/characters/hero/death/death_02.webp",
+    "assets/characters/hero/death/death_03.webp",
+    "assets/characters/hero/death/death_04.webp",
+    "assets/characters/hero/death/death_05.webp",
+    "assets/characters/hero/death/death_06.webp",
+    "assets/characters/hero/death/death_07.webp",
+    "assets/characters/hero/death/death_08.webp",
+    "assets/characters/hero/death/death_09.webp",
+    "assets/characters/hero/death/death_10.webp",
+    "assets/characters/hero/death/death_11.webp"
+  ]
+}

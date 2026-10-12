@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "type": "frame-animation",
+  "managed": true,
+  "name": "Walk",
+  "fps": 12,
+  "loop": true,
+  "coverFrame": "assets/characters/gunner/walk/walk_00.webp",
+  "frames": [
+    "assets/characters/gunner/walk/walk_00.webp",
+    "assets/characters/gunner/walk/walk_01.webp",
+    "assets/characters/gunner/walk/walk_02.webp",
+    "assets/characters/gunner/walk/walk_03.webp",
+    "assets/characters/gunner/walk/walk_04.webp",
+    "assets/characters/gunner/walk/walk_05.webp",
+    "assets/characters/gunner/walk/walk_06.webp",
+    "assets/characters/gunner/walk/walk_07.webp",
+    "assets/characters/gunner/walk/walk_08.webp",
+    "assets/characters/gunner/walk/walk_09.webp",
+    "assets/characters/gunner/walk/walk_10.webp",
+    "assets/characters/gunner/walk/walk_11.webp",
+    "assets/characters/gunner/walk/walk_12.webp"
+  ]
+}
